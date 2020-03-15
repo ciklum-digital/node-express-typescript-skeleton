@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "strict": true,
+    "pretty": true,
+    "newLine": "lf",
+    "allowJs": false,
+    "diagnostics": true,
+    "incremental": true,
+    "declaration": false,
+    "importHelpers": true,
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "noStrictGenericChecks": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "suppressExcessPropertyErrors": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "paths": {
+      "~service/*": ["src/*"]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

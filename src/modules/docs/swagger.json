@@ -1,0 +1,51 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Feature switcher",
+    "description": "",
+    "termsOfService": "https://www.ciklum.com",
+    "contact": {
+      "email": "info@ciklum.com"
+    },
+    "license": {
+      "name": "License should be added",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version": "0.0.1"
+  },
+  "servers": [{
+    "url": "/{baseUrl}",
+    "variables": {
+      "baseUrl": {
+        "default": "api"
+      }
+    }
+  }],
+  "paths": {
+    "/version": {
+      "get": {
+        "tags": [
+          "version"
+        ],
+        "summary": "Get application version",
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "text/html": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}

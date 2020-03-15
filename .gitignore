@@ -1,0 +1,14 @@
+node_modules/
+npm-debug.log
+dist/*
+.npmrc
+.env
+.git
+coverage
+r&d/assets
+!dist/.gitkeep
+tmp
+.idea
+deploy/version/
+logs/*
+.DS_Store
